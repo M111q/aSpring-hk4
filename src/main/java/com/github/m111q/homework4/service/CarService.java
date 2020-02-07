@@ -73,17 +73,17 @@ public class CarService {
         boolean result = false;
         if (first.isPresent()) {
             Car carToMod = first.get();
-            if (car.getColor() != null && !carToMod.getColor().equals(car.getColor())) {
+            if (car.getColor() != null && !car.getColor().equals("") && !carToMod.getColor().equals(car.getColor())) {
                 carToMod.setColor(car.getColor());
                 System.out.println("mod color");
                 result = true;
             }
-            if (car.getModel() != null && !carToMod.getModel().equals(car.getModel())) {
+            if (car.getModel() != null && !car.getModel().equals("") && !carToMod.getModel().equals(car.getModel())) {
                 carToMod.setModel(car.getModel());
                 System.out.println("mod model");
                 result = true;
             }
-            if (car.getMark() != null && !carToMod.getMark().equals(car.getMark())) {
+            if (car.getMark() != null && !car.getMark().equals("") && !carToMod.getMark().equals(car.getMark())) {
                 carToMod.setMark(car.getMark());
                 System.out.println("mod mark");
                 result = true;

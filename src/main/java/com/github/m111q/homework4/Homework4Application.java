@@ -10,4 +10,16 @@ public class Homework4Application {
         SpringApplication.run(Homework4Application.class, args);
     }
 
+//    Rozbuduj swoją aplikacje z poprzedniego tygodnia o interfejs graficzny, który umożliwi:
+//
+//    wyświetlanie wszystkich pozycji
+
+//    dodawanie pozycji
+//    usuwania jednej pozycji
+
+
+//    pobieranie elementu po jego id
+//    modyfikowanie pozycji
+//    modyfikowanie jednego z pól pozycji
+
 }
