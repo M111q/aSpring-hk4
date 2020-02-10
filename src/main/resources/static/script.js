@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8080/cars';
+const API_URL = 'https://still-brook-15321.herokuapp.com/cars';
 const carsDiv = document.getElementById('cars');
 
 getAllCars();
