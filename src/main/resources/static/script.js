@@ -64,9 +64,9 @@ function editCar(id) {
     const modelInputValue = document.getElementById(`modelEditFormInput${id}`).value;
     const colorInputValue = document.getElementById(`colorEditFormInput${id}`).value;
 
-    const newMark = (markInputValue === "") ? document.getElementById('cardCarMark' + id).innerText : markInputValue;
-    const newModel = (modelInputValue === "") ? document.getElementById('cardCarModel' + id).innerText : modelInputValue;
-    const newColor = (colorInputValue === "") ? document.getElementById('cardCarColor' + id).innerText : colorInputValue;
+    const newMark = (markInputValue) ? markInputValue : document.getElementById('cardCarMark' + id).innerText;
+    const newModel = (modelInputValue) ? modelInputValue : document.getElementById('cardCarModel' + id).innerText;
+    const newColor = (colorInputValue) ? colorInputValue : document.getElementById('cardCarColor' + id).innerText;
 
     newCar = {
         id: id,
