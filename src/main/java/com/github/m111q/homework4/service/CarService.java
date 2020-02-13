@@ -39,7 +39,7 @@ public class CarService {
     public List<Car> getCarsByColor(String color) {
         logger.info("getCarsByColor(String color) " + color);
         return carList.stream()
-                .filter(e -> e.getColor().equals(color))
+                .filter(e -> e.getColor().toLowerCase().equals(color.toLowerCase()))
                 .collect(Collectors.toList());
     }
 
